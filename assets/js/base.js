@@ -14,3 +14,14 @@ $(function () {
 	
 	
 });
+
+function loadMainContent(url)
+{
+	$.post(site_url+url
+			,{}
+			,function(result) {
+				$('#app-content').html(result);
+			}					
+			,"html"
+		);
+}
