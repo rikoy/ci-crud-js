@@ -19,9 +19,28 @@ class Crud extends MY_Controller {
 	public function index()
 	{
 		$data = array(
-			'content' 		=> 	'crud/main'
-			,'title' 		=> 	'CRUD'
+			'content' 		=> 'main'
+			, 'title'		=> 'CRUD'
+			, 'sub_title'	=> 'CRUD'
 		);
+		$this->load->view($data['content'], $data);
+	}
+
+	public function list_data()
+	{
+		$data = array(
+			'content' 		=> 	'list'
+		);
+
 		$this->load->view($data['content'],$data);
+	}
+
+	public function input()
+	{
+		$data = array(
+			'content' 		=> 	'input'
+		);
+
+		$this->load->view($data['content'], $data);
 	}
 }

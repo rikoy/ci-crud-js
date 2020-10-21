@@ -50,6 +50,10 @@ textarea {
 	padding-left: 3px;
 }
 
+.btn-action{
+	padding: 10px 0px;
+}
+
 .table td {
 	vertical-align: middle;
 }

@@ -1,3 +1,17 @@
+<script type='text/javascript'>
+	$(document).ready(function() {
+		loadListData("crud/list_data");
+	});
+</script>
 <div class="span12">
-	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam amet, eligendi hic omnis nam ducimus aperiam ea et porro aliquid fugiat nobis! Quaerat sequi illo vel natus sunt iure pariatur.
+	<div class="widget">
+		<div class="widget-header">
+			<i class="icon-th-large"></i>
+			<h3><?php echo $sub_title; ?></h3>
+		</div> <!-- /widget-header -->
+		<div class="widget-content">
+			<div id="input-form"></div>
+			<div id="list-data"></div>
+		</div>
+	</div>
 </div>

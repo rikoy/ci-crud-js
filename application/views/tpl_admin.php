@@ -59,6 +59,29 @@
         $(document).ready(function() {
             loadMainContent('crud');
         });
+
+        function loadInputForm(url) {
+            $.post(site_url + url, {}, function(result) {
+                $('#input-form').html(result);
+                $('#input-form').show();
+                $('#list-data').hide();
+
+            }, "html");
+        }
+
+        function loadListData(url) {
+            $.post(site_url + url, {}, function(result) {
+                $('#list-data').html(result);
+                $('#list-data').show();
+                $('#input-form').hide();
+
+            }, "html");
+        }
+
+        function backToList() {
+            $('#input-form').hide();
+            $('#list-data').show();
+        }
     </script>
 </body>
 
